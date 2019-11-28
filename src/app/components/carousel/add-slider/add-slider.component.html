@@ -1,0 +1,21 @@
+<div class="col">
+  <form [formGroup]="newSLiderForm" (ngSubmit)="loadSliderAfterAdd()">
+    <div class="form-group">
+      <input type="text"
+        [ngClass]="{'is-invalid': newSLiderForm.get('size').errors && newSLiderForm.get('size').touched}"
+        class="form-control txt-input" placeholder="Size" formControlName="size">
+      <div class="invalid-feedback">Please provide the size</div>
+    </div>
+    <div class="input-group">
+      <input type="text"
+        [ngClass]="{'is-invalid': newSLiderForm.get('radius').errors && newSLiderForm.get('radius').touched}"
+        class="form-control txt-input" placeholder="Corner radius" formControlName="radius">
+      <div class="input-group-append">
+        <span class="input-group-text">Px</span>
+      </div>
+    </div>
+    <div class="mt-5 text-center">
+      <button type="submit" class="btn btn-block q-btn">ADD SQUARE</button>
+    </div>
+  </form>
+</div>

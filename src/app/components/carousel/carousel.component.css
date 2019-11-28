@@ -1,0 +1,18 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 540px;
+  height: 840px;
+}
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.slides::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
